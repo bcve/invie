@@ -21,6 +21,7 @@ body
 {
     font-size: 50px;    
     margin-left: 37px;
+    margin-top: -4px;
     
 }
 
@@ -41,7 +42,6 @@ body
 .guitarras article
 {
     border: 1px #1f313c solid; 
-    /*overflow: hidden;*/
     margin: 0 0 33px 10px;
     padding: 10px;
 }
@@ -80,8 +80,9 @@ body
 .menu {
     font-size: 24px;
     display: inline-block;
-    position: absolute;
-    right: 342px;
+    /* position: absolute; */
+    /* right: 342px; */
+    float: right;
 }
 
 .logotipo
@@ -104,14 +105,14 @@ body
 
 .contenedor
 {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
 }
 
 .guitarra-a {
     float: right;
     position: relative;
-    top: -112px;
+    top: -108px;
 }
 
 .guitarra-b {
@@ -176,7 +177,7 @@ body
 
 .intereses , .sexo
 {
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 15px;
     
 }
@@ -239,4 +240,185 @@ input , textarea
 textarea:focus , input:focus
 {
     background: lightgray;
+}
+
+@media screen and (max-width: 800px)
+{
+    .portada
+    {
+        height: auto;
+    }
+
+    .portada a
+    {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .titulo
+    {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .title-a
+    {
+        font-size: 20px;
+    }
+
+    .guitarras
+    {
+        text-align: center;
+        margin: 0 10 33px 10px;
+    }
+    .guitarra-a,.guitarra-b
+    {
+        float: none;
+        position: static;
+    }
+    .guitarras ol
+    {
+        list-style: none;
+    }
+
+    .contacto
+    {
+        margin-left: 20px;
+    }
+    .title-b {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    height: auto;
+    }
+    .guitarra-2 {
+    position: static; 
+    }
+
+    .tabla 
+    {
+    width: 100%;
+    margin: 40px 0;
+    width: 61%;
+    text-align: center;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    .footer .contenedor 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    }
+
+    .sexo
+    {
+        zoom: 1.1;
+    }
+
+    .col1
+    {
+        margin: 20px 0 0 0;
+    }
+
+    #comentarios
+    {
+        width: 333px
+    }
+
+    .col2
+    {
+        margin: 0px;
+    }
+
+    .intereses label
+    {
+        display: block;
+        zoom:1.1;
+    }
+
+
+}
+@media screen and (max-width: 600px)
+{
+   .menu
+   {
+    float: none;
+   }
+   .portada ul 
+   {
+    padding: 0;
+   }
+   .logotipo
+   {
+    display: block;
+   }
+   header
+   {
+    text-align: center;
+   }
+   .portada .contenedor
+   {
+    text-align: center;
+   }
+   .titulo {
+    font-size: 27px;
+    margin-top: 26px;
+    }
+    .portada ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 14px;
+    }
+
+    .portada .contenedor
+    {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    .menu
+    {
+        display: block;
+    }
+    .menu li 
+    {
+        margin:0;
+        display: block;
+        border-bottom: 1px solid white;
+        padding: 8px 0;
+    }
+    .menu li:first-child
+    {
+        border-top: 1px solid white;
+
+    }
+
+    .titulo {
+    font-size: 27px;
+    margin-top: 41px;
+    margin-bottom: 15px;
+    }
+
+    .title-a {
+    font-size: 17px;
+    }
+
+    .subheader
+    {
+        height: auto;
+    }
+
 }
