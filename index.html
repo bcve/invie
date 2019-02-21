@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/invie.css">
     <title>Guitarras Invie-sibles</title>
@@ -11,8 +13,8 @@
             <a href="index.html"><img src="images/invie.png" alt="invie logo" width="186px" height="60"></a>
             
         </figure>
-        <span class="icon-menu burger-menu"></span>
-    <nav class="menu"><!-- menu -->
+        <span class="icon-menu burger-menu" id="burgerMenu"></span>
+    <nav class="menu active" id="menu"><!-- menu -->
         <ul>
             <li><a href="#home" title="">Home</a></li>
             <li><a href="#guitarras" title="">Guitarras</a></li>
@@ -86,5 +88,18 @@
     </form>
    </div>
 </footer>
+<script type="text/javascript">
+    var $burgerMenu = document.getElementById('burgerMenu');
+    var $menu = document.getElementById('menu');
+
+    $burgerMenu.addEventListener('touchstart',function()
+    {
+        $menu.classList.toggle('active')
+    })
+
+
+
+
+</script>
 </body>
 </html>
