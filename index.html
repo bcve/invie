@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/invie.css">
     <title>Guitarras Invie-sibles</title>
 </head>
@@ -12,13 +14,14 @@
             <a href="index.html"><img src="images/invie.png" alt="invie logo" width="186px" height="60"></a>
             
         </figure>
-    <nav class="menu"><!-- menu -->
+    <nav class="menu" id="menu"><!-- menu -->
         <ul>
             <li><a href="#home" title="">Home</a></li>
             <li><a href="#guitarras" title="">Guitarras</a></li>
             <li><a href="precios.html" title="">Precios</a></li>
         </ul>
     </nav>
+    <span class="icon-menu" id="iconMenu"></span>
     </header>
     <div class="contenedor">
         <h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
@@ -72,10 +75,10 @@
             <input type="radio" name="sexo" value="Hombre">Hombre
         </div>
         <div class="intereses">
-            <input type="checkbox" name="intereses" checked value="cotizacion">cotizacion
-            <input type="checkbox" name="intereses" value="reclamos">reclamos
-            <input type="checkbox" name="intereses" value="comentarios">comentarios
-            <input type="checkbox" name="intereses" value="otros">otros
+            <label><input type="checkbox" name="intereses" checked value="cotizacion">Cotizacion
+            <label><input type="checkbox" name="intereses" value="reclamos">Reclamos</label>
+            <label><input type="checkbox" name="intereses" value="comentarios">Comentarios</label>
+            <label><input type="checkbox" name="intereses" value="otros">otros</label>
         </div>
         </div>
         <div class="col2">
@@ -85,6 +88,21 @@
         </div>
     </form>
    </div>
+   <script type="text/javascript">
+       var $iconMenu = document.getElementById('iconMenu');
+       var $menu = document.getElementById('menu');
+
+
+       $iconMenu.addEventListener('touchstart', toggleMenu);
+
+       function toggleMenu()
+        {
+            
+            $menu.classList.toggle('active')
+        }
+
+
+   </script>
 </footer>
 </body>
 </html>
