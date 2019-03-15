@@ -226,6 +226,7 @@ body
 {
     margin-bottom: 5px;
     margin-top: 5px;
+    display: block;
 }
 
 .col2
