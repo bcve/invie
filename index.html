@@ -32,7 +32,7 @@
 <section id="guitarras" class="guitarras contenedor"><!-- guitarras -->
     <h2>Nuestras guitarras</h2>
     <article class="guitarras"><!-- guitarra1 -->
-            <img class="guitarra-a" src="images/invie-acustica.png" alt="invie classic" width="350px">
+            <img class="guitarra-a" data-src="images/invie-acustica.png" alt="invie classic" width="350px">
         <div class="guitarra-1">
             <h3 class="title-b">Invie Acustica</h3>
             <ol>
@@ -43,7 +43,7 @@
         </div>
     </article>
     <article class="guitarras"><!-- guitarra2 -->
-            <img class="guitarra-b" src="images/invie-classic.png" alt="invie classic" width="400px">
+            <img class="guitarra-b" data-src="images/invie-classic.png" alt="invie classic" width="400px">
         <div class="guitarra-2">
             <h3 class="title-b" >Invie Classic</h3>
             <ol>
@@ -57,7 +57,7 @@
 <footer class="footer">
    <div class="contenedor">
         <div class="contacto">
-        <img src="images/invie-white.png" alt="">
+        <img data-src ="images/invie-white.png" alt="invie">
         <div class="datos">
             <a href="tel:+582427539318"><strong>Telefono</strong> <span>+584247539318</span></a>
         <a href="mailto:contacto@beatrizvillamizar.com"><strong>email</strong> <span>contacto@beatriz.com</span></a>
@@ -88,7 +88,15 @@
     </form>
    </div>
 </footer>
-<script type="text/javascript">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+
+        <script type="text/javascript">
+            var bLazy = new Blazy({
+            selector:'img'
+        });
+        </script>
+
+        <script type="text/javascript">
         var consulta = window.matchMedia('(max-width:500px)');
         var $burgerMenu = document.getElementById('burgerMenu');
         var $menu = document.getElementById('menu');
