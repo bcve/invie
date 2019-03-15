@@ -89,16 +89,37 @@
    </div>
 </footer>
 <script type="text/javascript">
+        var consulta = window.matchMedia('(max-width:500px)');
+        var $burgerMenu = document.getElementById('burgerMenu');
+        var $menu = document.getElementById('menu');
+
+        consulta.addListener(mediaQuery)
+
 
         function toggleMenu()
         {
             $menu.classList.toggle('active')
         }
 
+        function mediaQuery()
+        {
+
+            if (consulta.matches)
+            {
+                $burgerMenu.addEventListener('touchstart',toggleMenu);
+                console.log("ostia");
+            }
+            else
+            {   
+                $burgerMenu.removeEventListener('touchstart',toggleMenu);
+                console.log("tia");
+                
+            }
+        }
+
+        mediaQuery();
+
         
-        var $burgerMenu = document.getElementById('burgerMenu');
-        var $menu = document.getElementById('menu');
-        $burgerMenu.addEventListener('touchstart',toggleMenu);
 
 </script>
 </body>
