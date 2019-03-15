@@ -90,30 +90,15 @@
 </footer>
 <script type="text/javascript">
 
-    var consulta = matchMedia('(max-width:500px)');
-    consulta.addListener(mediaQuery);
-    
-    function mediaQuery()
-    {
-        if (consulta.matches) {
-        console.log("ostia");
-        $burgerMenu.addEventListener('touchstart',toggleMenu);
-        }
-        else
-        {
-            console.log("tia");
-            $burgerMenu.removeEventListener('touchstart',toggleMenu);
-        }
-    }
-
-        var $burgerMenu = document.getElementById('burgerMenu');
-        var $menu = document.getElementById('menu');
         function toggleMenu()
         {
             $menu.classList.toggle('active')
         }
 
-        mediaQuery();
+        
+        var $burgerMenu = document.getElementById('burgerMenu');
+        var $menu = document.getElementById('menu');
+        $burgerMenu.addEventListener('touchstart',toggleMenu);
 
 </script>
 </body>
