@@ -89,6 +89,7 @@ body
 .portada
 {
     background-image: url('../images/background.png');
+    background-color: black;
     background-size: cover;
     color: white;
     padding: 20px;
@@ -283,6 +284,24 @@ textarea:focus , input:focus
     background: lightgray;
 }
 
+.video-responsive
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-video
+{
+    position: relative;
+    padding-top: 56.25%;
+    margin-bottom: 15%
+}
+
 @media screen and (max-width: 800px)
 {
     .portada
@@ -315,6 +334,11 @@ textarea:focus , input:focus
     {
         float: none;
         position: static;
+    }
+
+    .guitarra-a
+    {
+        width: 56%;
     }
     .guitarras ol
     {
@@ -524,4 +548,12 @@ textarea:focus , input:focus
     width: 100%;
     }
 
+}
+
+@media screen (min-device-pixel-ratio: 2)
+{
+    .portada
+    {
+        background-image: url('../images/invie2x.png');
+    }
 }
