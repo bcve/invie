@@ -118,6 +118,17 @@
             $menu.classList.toggle('active')
         }
 
+        function showMenu()
+        {
+            $menu.classList.add('active')
+        }
+
+        function hideMenu()
+        {
+            $menu.classList.remove('active')
+        }
+
+
         function mediaQuery()
         {
 
@@ -143,9 +154,9 @@
         <script>
             var $body = document.body;
             var hammertime = new Hammer($body);
-            hammertime.on('swipeleft', toggleMenu);
+            hammertime.on('swipeleft', showMenu);
 
-            hammertime.on('swiperight', toggleMenu);
+            hammertime.on('swiperight', hideMenu);
         </script>
 </body>
 </html>
