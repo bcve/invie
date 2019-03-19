@@ -96,13 +96,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
-        <script>
-            var $body = document.body;
-            var hammertime = new Hammer($body);
-            hammertime.on('swipeleft', toggleMenu);
 
-            hammertime.on('swiperight', toggleMenu);
-        </script>
 
         <script type="text/javascript">
             var bLazy = new Blazy({
@@ -144,6 +138,14 @@
 
         
 
-</script>
+        </script>
+
+        <script>
+            var $body = document.body;
+            var hammertime = new Hammer($body);
+            hammertime.on('swipeleft', toggleMenu);
+
+            hammertime.on('swiperight', toggleMenu);
+        </script>
 </body>
 </html>
