@@ -99,13 +99,9 @@
         <script>
             var $body = document.body;
             var hammertime = new Hammer($body);
-            hammertime.on('swipeleft', function(ev) {
-                console.log(ev);
-            });
+            hammertime.on('swipeleft', toggleMenu);
 
-            hammertime.on('swiperight', function(ev) {
-                console.log(ev);
-            });
+            hammertime.on('swiperight', toggleMenu);
         </script>
 
         <script type="text/javascript">
