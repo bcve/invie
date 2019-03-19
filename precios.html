@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/invie.css">
     <title>Guitarras Invie-sibles</title>
@@ -12,22 +13,26 @@
             <a href="index.html"><img src="images/invie.png" alt="invie logo" width="186px" height="60"></a>
             
         </figure>
-    <nav class="menu"><!-- menu -->
-        <ul>
+    <nav class="menu active" id="menu"><!-- menu -->
+        <ul class="lista">
             <li><a href="index.html" title="">Home</a></li>
             <li><a href="index.html#guitarras" title="">Guitarras</a></li>
             <li><a href="precios.html" title="">Precios</a></li>
         </ul>
     </nav>
+    <span class="icon-menu burger-menu" id="burgerMenu"></span>
       </div>
     </header>
 
-   <div class="contenedor">
+   <div class="contenedor tabloide">
        
        <table class="tabla" border="1">
            <thead>
                <tr>
                    <th>tipo de guitarra</th>
+                   <th>precio</th>
+                   <th>comentario</th>
+                    <th>tipo de guitarra</th>
                    <th>precio</th>
                    <th>comentario</th>
                </tr>
@@ -37,13 +42,22 @@
                    <td>Invie classic</td>
                    <td>$100.000</td>
                    <td>es una guitarra muy pro</td>
-               </tr>
-               <tr>
                    <td>Invie classic</td>
                    <td>$100.000</td>
                    <td>es una guitarra muy pro</td>
                </tr>
                <tr>
+                   <td>Invie classic</td>
+                   <td>$100.000</td>
+                   <td>es una guitarra muy pro</td>
+                   <td>Invie classic</td>
+                   <td>$100.000</td>
+                   <td>es una guitarra muy pro</td>
+               </tr>
+               <tr>
+                   <td>Invie classic</td>
+                   <td>$100.000</td>
+                   <td>es una guitarra muy pro</td>
                    <td>Invie classic</td>
                    <td>$100.000</td>
                    <td>es una guitarra muy pro</td>
@@ -83,4 +97,50 @@
         </div>
     </form>
    </div>
+
 </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+
+        <script type="text/javascript">
+            var bLazy = new Blazy({
+            selector:'img'
+        });
+        </script>
+
+        <script type="text/javascript">
+        var consulta = window.matchMedia('(max-width:500px)');
+        var $burgerMenu = document.getElementById('burgerMenu');
+        var $menu = document.getElementById('menu');
+
+        consulta.addListener(mediaQuery)
+
+
+        
+        function toggleMenu()
+        {
+            $menu.classList.toggle('active')
+        }
+
+        function mediaQuery()
+        {
+
+            if (consulta.matches)
+            {
+                $burgerMenu.addEventListener('touchstart',toggleMenu);
+                console.log("ostia");
+            }
+            else
+            {   
+                $burgerMenu.removeEventListener('touchstart',toggleMenu);
+                console.log("tia");
+                
+            }
+        }
+
+        mediaQuery();
+
+        
+
+</script>
+</body>
+</html>

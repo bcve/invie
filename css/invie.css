@@ -37,7 +37,7 @@
   content: "\ea85";
 }
 
-
+p {font-weight:bold;}
 body
 {
  font-family: 'Allerta', sans-serif;   
@@ -367,6 +367,13 @@ textarea:focus , input:focus
     margin: auto;
     margin-top: 48px;
     margin-bottom: 48px;
+    border: solid #273b47 1px;
+    }
+
+    .tabloide
+    {
+        overflow: auto;
+        margin: 0 20px;
     }
 }
 
@@ -458,6 +465,12 @@ textarea:focus , input:focus
     {
         display: flex;
         align-items: center;
+    }
+
+    .lista
+    {
+        flex: 1;
+        padding-left: 0;
     }
 
 
