@@ -108,6 +108,7 @@ body
     color: white;
     padding: 20px;
     height: 150px;
+    padding: 10%;
 }
 
 .boton {
@@ -126,8 +127,6 @@ body
 .menu {
     font-size: 24px;
     display: inline-block;
-    /* position: absolute; */
-    /* right: 342px; */
     float: right;
 }
 
@@ -135,6 +134,7 @@ body
 {
     display: inline-block;
     margin: 0;
+    /*! float: left; */
 }
 
 .menu li
@@ -153,6 +153,7 @@ body
 {
     max-width: 800px;
     margin: auto;
+    text-align: center;
 }
 
 .guitarra-a {
@@ -170,7 +171,7 @@ body
 .footer
 {
     background: #273b47;
-    padding: 49px 0 0px 0px;
+    padding: 6%;
 }
 
 .footer img {
@@ -226,6 +227,7 @@ body
     font-size: 13px;
     margin-top: 15px;
     
+    text-align: left;
 }
 
 .col1 label
@@ -233,6 +235,7 @@ body
     margin-bottom: 5px;
     margin-top: 5px;
     display: block;
+    text-align: left;
 }
 
 .col2
@@ -249,6 +252,11 @@ body
 {
     width: 100%;
     margin: 40px 0;
+}
+
+#arriba
+{
+    width: 60%;
 }
 th
 {
@@ -320,8 +328,13 @@ textarea:focus , input:focus
     .portada
     {
         height: auto;
+        /*! padding: 6%; */
     }
-
+    
+    #arriba
+{
+    width: 45%;
+}
     .contenedor-video2 {
     margin-bottom: 5%;
     }
@@ -330,6 +343,7 @@ textarea:focus , input:focus
     {
         display: inline-block;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     .titulo
@@ -403,6 +417,16 @@ textarea:focus , input:focus
     align-items: center;
     }
     
+    #arriba
+{
+    width: 50%;
+}
+    
+    .boton{
+        margin: auto;
+        
+    }
+    
     .contenedor-video2 {
     margin-bottom: 5%;
     }
@@ -438,6 +462,11 @@ textarea:focus , input:focus
         display: block;
         zoom:1.1;
     }
+    
+    .boton{
+        width: 100%;
+        /*! text-align: center; */
+    }
 
 
 }
@@ -447,6 +476,11 @@ textarea:focus , input:focus
    {
     float: none;
    }
+    
+    #arriba
+{
+    width: 60%;
+}
    .portada ul 
    {
     padding: 0;
@@ -488,6 +522,11 @@ textarea:focus , input:focus
         align-items: center;
     }
     
+    #arriba
+{
+    width: 70%;
+}
+    
 
     .lista
     {
@@ -496,7 +535,8 @@ textarea:focus , input:focus
     }
     
     .boton {
-    width: 80%;
+    width: 100%;
+    margin: auto;
 }
 
     .burger-menu
