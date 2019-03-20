@@ -65,6 +65,11 @@ body
     
 }
 
+.burger-menu
+{
+    display: none;
+}
+
 
 .guitarras
 {
@@ -82,7 +87,7 @@ body
 .guitarras article
 {
     border: 1px #1f313c solid; 
-    margin: 0 0 33px 10px;
+    margin: 0 10px 33px 10px;
     padding: 10px;
 }
 
@@ -299,14 +304,26 @@ textarea:focus , input:focus
 {
     position: relative;
     padding-top: 56.25%;
-    margin-bottom: 15%
+    /*margin-bottom: 15%;*/
 }
 
+.contenedor-video2
+{
+    max-width: 500px;
+    margin: 0 auto ;
+    border: 1px #304959 solid;
+    margin-bottom: 10%;
+    border: 4px solid #324c5c
+}
 @media screen and (max-width: 800px)
 {
     .portada
     {
         height: auto;
+    }
+
+    .contenedor-video2 {
+    margin-bottom: 5%;
     }
 
     .portada a
@@ -384,6 +401,10 @@ textarea:focus , input:focus
     display: flex;
     flex-direction: column;
     align-items: center;
+    }
+    
+    .contenedor-video2 {
+    margin-bottom: 5%;
     }
     
     .formulario {
@@ -466,11 +487,21 @@ textarea:focus , input:focus
         display: flex;
         align-items: center;
     }
+    
 
     .lista
     {
         flex: 1;
         padding-left: 0;
+    }
+    
+    .boton {
+    width: 80%;
+}
+
+    .burger-menu
+    {
+        display: block;
     }
 
 
@@ -489,7 +520,7 @@ textarea:focus , input:focus
     }
 
     .menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -500,6 +531,7 @@ textarea:focus , input:focus
     align-items: center;
     width: 100%;
     transition: .3s;
+    z-index: 2;
     }
 
     .titulo {
@@ -528,7 +560,7 @@ textarea:focus , input:focus
     font-size: 20px;
     padding: 4px;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     margin-top: 20px;
